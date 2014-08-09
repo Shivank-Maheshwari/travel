@@ -1,0 +1,1 @@
+<?php	require_once('connectvars.php');	function match($x,$y)	{		if($x==$y)			return true;		else			return false;	}		function getConnect()	{		$dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);		//echo $dbc;		return $dbc;	}?>

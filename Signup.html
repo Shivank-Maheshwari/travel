@@ -1,0 +1,92 @@
+      <div id="window" class="window" style="width:60%; margin-left:13em;">
+    <div class="caption">
+        <span class="icon icon-windows"></span> 
+        <div class="title">Window caption</div> 
+        <button id="min" class="btn-min"></button> 
+        <button id="max" class="btn-max" id="maximize" ></button> 
+        <button class="btn-close" onclick="closewin()"></button> 
+    </div>
+    <div class="content">  
+		<div class="example signup" style="width:inherit">
+            <form id="sign" name="frm" action="<?php echo $_SERVER['REQUEST_URI'] ?>" METHOD="post" onsubmit="return valform()">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <label>Enter E-Mail Id</label>
+                    <div class="input-control text" data-role="input-control">
+                        <input type="text" name="email" id="email" placeholder="E-Mail Id" data-hint="Enter E-Mail Id" data-hint-position="right" onblur="checkEmail()">
+						<span id="image1"></span>
+                        <button class="btn-clear" tabindex="-1" type="button"></button>
+						<span id="error_email" style="color:red;"></span>
+                    </div>
+					<div id="userna">
+					<label>Choose User Name</label>
+                    <div class="input-control text" data-role="input-control">
+                        <input type="text" name="username" onblur="checkAvail()" placeholder="Username" data-hint="Username Will be used for Login" data-hint-position="right">
+                        <button class="btn-clear" tabindex="-1" type="button"></button>
+						
+                    </div>
+					
+					<span id="image"></span>
+					
+					<div id="responseOutput" style="color:red"></div>
+					</div>
+					<label>First Name</label>
+                    <div class="input-control text" data-role="input-control">
+                        <input type="text" name="fname" placeholder="chars" data-hint="Your First Name" data-hint-position="right">
+                        <button class="btn-clear" tabindex="-1" type="button"></button>
+                    </div>
+					<label>Last Name</label>
+                    <div class="input-control text" data-role="input-control">
+                        <input type="text" name="lname" placeholder="chars" data-hint="Your Last Name" data-hint-position="right">
+                        <button class="btn-clear" tabindex="-1" type="button"></button>
+                    </div>
+                    <label>Password</label>
+                    <div class="input-control password" data-role="input-control">
+                        <input type="password" name="password" placeholder="Your Password" autofocus="" data-hint="Enter Strong Password" data-hint-position="right">
+                        <button class="btn-reveal" tabindex="-1" type="button"></button>
+                    </div>
+					<label>Enter Password Again</label>
+					<div class="input-control password" data-role="input-control">
+                        <input type="password" name="password_repeat" placeholder="Retype Password" autofocus="" data-hint="Enter Password Again" data-hint-position="right">
+                        <button class="btn-reveal" tabindex="-1" type="button"></button>
+                    </div>
+                    
+                    
+
+                    <div>
+                        <div class="clearfix">
+                        <div class="input-control radio inline-block" data-role="input-control" data-hint="Choose Gender" data-hint-position="right">
+                            <label class="inline-block">
+                                <input type="radio" name="gender" checked="">
+                                <span class="check"></span>
+                                Male
+                            </label>
+                            <label class="inline-block">
+                                <input type="radio" name="gender">
+                                <span class="check"></span>
+                                Female
+                            </label>
+                        </div>
+                        
+                        </div>
+                        <div class="input-control switch" data-role="input-control" data-hint="Default On" data-hint-position="left">
+                            <label class="inline-block" style="margin-right: 20px">
+                                Subscribe to our News Letter 
+                                <input type="checkbox" name="subscribe" checked="" >
+                                <span class="check"></span>
+                            </label>
+                            
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Sign Up" name="submit" disabled>
+                    <input type="reset" value="Reset">
+                    
+
+                    <div style="margin-top: 20px">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+		</div>

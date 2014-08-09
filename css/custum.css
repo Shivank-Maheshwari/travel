@@ -1,0 +1,35 @@
+html{
+background: url(https://farm6.staticflickr.com/5518/13949283912_5dcdef60c0_o_d.jpg) center center fixed; 
+background-size: cover;
+background-repeat:no-repeat;
+}
+
+.login{
+width:650px;
+margin: 100px 0px 0px 600px;
+background-color: inherit;
+color:white;
+}
+
+.stt{
+position:fixed;
+color:#17b777;
+z-index:2;
+}
+
+.signup{
+width:65%;
+}
+
+.rtime{
+float:right;
+}
+
+
+.myhover{
+background-color:red;
+}
+
+#topclose{
+margin-left:560px;
+}
